@@ -48,23 +48,23 @@ name = input("What is your name? ")
 
 password = str(input("What is your password? "))
 
-# if len(password) < 8:
-#         print("Password must be at least 8 characters long and contain at least one digit.")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+        print("Password is valid")
         
-# else :
-#    print()
-
-grade = int(input("What did you score on the test? "))
-
-if grade >= 90 and grade <= 100:
-        print("Good job", (name), "you got an A")
-elif grade >= 80 and grade <= 89 :
-    print((name), "You got a B")
-elif grade >= 70 and grade <= 79 :
-    print((name), "You got a C")
-elif grade >= 60 and grade <= 69 :
-        print ("Sorry", (name), "you got a D")
 else :
-      print((name), "you failed")
+   print("Password is invalid")
+
+# grade = int(input("What did you score on the test? "))
+
+# if grade >= 90 and grade <= 100:
+#         print("Good job", (name), "you got an A")
+# elif grade >= 80 and grade <= 89 :
+#     print((name), "You got a B")
+# elif grade >= 70 and grade <= 79 :
+#     print((name), "You got a C")
+# elif grade >= 60 and grade <= 69 :
+#         print ("Sorry", (name), "you got a D")
+# else :
+#       print((name), "you failed")
 
 
