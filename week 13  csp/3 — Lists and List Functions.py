@@ -128,6 +128,29 @@ fav_foods.reverse()
 print(fav_foods)
 # Create a list of 3 lists (matrix), and access the middle element.]
 
+#set = {1,2,3}
+#sets are unordered, do not support index or slicing, you can remove or add, use {}, no duplicates
+
+my_set = {1,2,3,4,5}
+print(my_set)
+print(type(my_set))
+
+my_set.add(6)
+print(my_set)
+
+my_set.remove(3)
+print(my_set)
+
+print(4 in my_set)
+print(3 in my_set)
 
 
+
+#tuples are ordered, cant modify them after creation, use ()
+
+my_tuples = (1,2,3,4,5)
+print(my_tuples)
+print(type(my_tuples))
+print(my_tuples[0])
+print(my_tuples[1:4])
 
